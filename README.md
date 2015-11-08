@@ -25,7 +25,9 @@ you can change the expected file name in the script configuration
 section.
 
 Names are case sensitive in the labels file by default. This means that if you capitalize a name in your JSON file, but the name is
-lowercase on GitHub, the label will be updated to match.
+lowercase on GitHub, the label will be updated to match. You can
+set the `SKIP_EXISTING` flag to skip updates to names and colors
+for labels which exist already.
 
 
 ### Configure Script

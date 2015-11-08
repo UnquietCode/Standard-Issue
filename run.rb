@@ -17,8 +17,8 @@ SKIP_EXISTING = false
 # labels file
 LABELS_FILE = 'labels.json'
 
-# ignore case when matching existing labels?
-CASE_INSENSITIVE = true
+# Specify the github project
+GITHUB_REPOSITORY = "User/repo"
 
 # Github login creds
 GITHUB_LOGIN = "gh_user"
@@ -26,9 +26,6 @@ GITHUB_PASSWORD = "gh_password"
 
 # or set this instead
 GITHUB_API_KEY = 'api_key'
-
-# Specify the github project
-GITHUB_REPOSITORY = "User/repo"
 
 ##############################
 # End Config
@@ -48,11 +45,7 @@ def init_client()
 end
 
 def cased_label(label)
-  if CASE_INSENSITIVE == true
-    label.downcase
-  else
-    label
-  end
+  label.downcase
 end
 
 def get_new_labels()
@@ -150,4 +143,4 @@ get_existing_labels()
 update_labels()
 remove_labels()
 
-puts "\nFinished updating labls in repository '#{GITHUB_REPOSITORY}'!"
+puts "\nFinished updating labels in repository '#{GITHUB_REPOSITORY}'!"
