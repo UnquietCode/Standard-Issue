@@ -6,10 +6,10 @@ require 'json'
 ##############################
 
 # dry run?
-DRY_RUN = false
+DRY_RUN = true
 
 # delete existing labels which are not specified?
-DELETE_MISSING = true
+DELETE_MISSING = false
 
 # skip labels which exist already
 SKIP_EXISTING = false
