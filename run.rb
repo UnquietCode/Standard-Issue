@@ -139,7 +139,9 @@ def remove_labels()
   end
 end
 
-
+if DRY_RUN == true
+  puts "This will just be a dry run...\n"
+end
 
 # All together now.
 init_client()
