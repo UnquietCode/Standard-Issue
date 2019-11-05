@@ -1,35 +1,15 @@
 require 'octokit'
 require 'json'
 
-##############################
-# Config
-##############################
+# load the configuration file
+if ARGV.length < 1
+  puts "usage <someFile.conf>"
+  exit
+end
 
-# dry run?
-DRY_RUN = true
+conf_file = ARGV[0]
+load conf_file
 
-# delete existing labels which are not specified?
-DELETE_MISSING = false
-
-# skip labels which exist already
-SKIP_EXISTING = false
-
-# labels file
-LABELS_FILE = 'labels.json'
-
-# Specify the github project
-GITHUB_REPOSITORY = "User/repo"
-
-# Github login creds
-GITHUB_LOGIN = "gh_user"
-GITHUB_PASSWORD = "gh_password"
-
-# or set this instead
-GITHUB_API_KEY = 'api_key'
-
-##############################
-# End Config
-##############################
 
 @client
 @new_labels
