@@ -4,7 +4,16 @@
   "Improvement" : "0066ee",
   "Task" : "fbca04",
   "Question" : "5319e7",
+  "Design" : "5319e7",
 
   "duplicate" : "cccccc",
-  "evaluating" : "cc317c"
+  "evaluating" : "cc317c",
+  "in progress" : "fef2c0",
+
+  "size: 0.25" : "cbcbcb",
+  "size: 0.5" : "cbcbcb",
+  "size: 1" : "cbcbcb",
+  "size: 1.5" : "cbcbcb",
+  "size: 2" : "cbcbcb",
+  "size: 3" : "cbcbcb"
 }
